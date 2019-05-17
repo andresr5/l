@@ -1,0 +1,29 @@
+server:
+  port: 7575
+spring:
+ main:
+  allow-bean-definition-overriding: true
+ redis:
+  url: redis://192.168.29.32:6379
+  host: 192.168.29.32
+  port: 6379
+
+ cloud:
+  gateway:
+   routes:
+   - id: users
+     uri: http://localhost:9090/users
+     predicates:
+     - Path=/users
+     - Header=Hail
+      
+     
+management:
+ endpoint:
+  gateway: 
+   enabled: true # default value
+ web:
+  exposure:
+   include: users     
+   
+    

@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Implementation-Title: movii-pilot-gateway
+Implementation-Version: 0.1
+Built-By: andres.rodriguez
+Implementation-Vendor-Id: com.movii.gateway
+Build-Jdk: 1.8.0_201
+Implementation-URL: https://projects.spring.io/spring-boot/#/spring-bo
+ ot-starter-parent/movii-pilot-gateway
+Created-By: Maven Integration for Eclipse
+
